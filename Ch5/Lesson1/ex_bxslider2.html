@@ -1,0 +1,42 @@
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../js/jquery.bxslider.css">
+	<title>ex_bxslider.html</title>
+	<script src="../../js/jquery-3.6.0.min.js"></script>
+	<script src="../../js/jquery.bxslider.min.js"></script>
+	<script>
+$(document).ready(function(){
+//この中に処理を記述 開始
+
+//bxsliderの表示設定
+$('.bxslider').bxSlider({
+mode: 'horizontal',	//'horizontal', 'vertical', 'fade'
+speed: 1000,	//１秒掛けてアニメーション移動（2000=2秒）
+startSlide: 0,	//最初のスライドを設定：0からカウントします
+auto: true,	//自動再生［true=ON、false=OFF］
+autoControls: true,	//自動再生のコントローラを表示［true=ON、false=OFF］
+adaptiveHeight: true,	//高さが大きい場合に自動でフィットします
+captions: false	//true=imgタグのtitle属性を表示［true=表示、false=非表示］
+});
+
+//この中に処理を記述 終了
+});
+</script>
+</head>
+<body>
+<div id="content">
+<h1>bxsliderライブラリ</h1>
+<!-- スクロール横画像 -->
+<div class="slider" style="width:600px;">
+	<ul class="bxslider">
+		<li><img src="../../js/images/frog1.jpg" title="Aの画像を表示します。"></li>
+		<li><img src="../../js/images/frog2.jpg" title="Bの画像を表示します。"></li>
+		<li><img src="../../js/images/frog3.jpg" title="Cの画像を表示します。"></li>
+		<li><img src="../../js/images/frog4.jpg" title="Dの画像を表示します。"></li>
+		<li><img src="../../js/images/frog5.jpg" title="Eの画像を表示します。サイズが大きい"></li>
+	</ul>
+</div>
+<!-- スクロール横画像 -->
+</div>
+</body>
+</html>
